@@ -1,0 +1,26 @@
+prediction:
+  azimuth_start: 185
+  azimuth_stop: 340
+  azimuth_tca: null
+  max_elevation: 36
+  tca: null
+  time_start: 2020-04-26 20:05:00
+  time_stop: 2020-04-26 20:19:00
+satellite:
+  name: Delfi-C3
+  noradid: '32789'
+  tle:
+    line1: 1 32789U 08021G   20116.37221214  .00000769  00000-0  54365-4 0  9991
+    line2: 2 32789  97.4237 161.0180 0013468 133.0546 227.1812 15.07619897653914
+station:
+  name: DopTrack
+  position:
+    altitude: 95
+    latitude: 51.9989
+    longitude: 4.3733585
+tracking:
+  epoch: 2020-04-26 20:05:03.128580
+  fca: 145868824.91173154
+  fca_error: 0.15747731950052812
+  tca: 2020-04-26 20:12:15.394254
+  tca_error: 0.011553071356509497
