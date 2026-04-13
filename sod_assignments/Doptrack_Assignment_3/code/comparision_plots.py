@@ -35,6 +35,8 @@ COLORS = {
     'far': '#0F6E56',
     'c20_c22_single_station': '#D85A30',
     'c20_c22_far_stations': '#BA7517',
+    'c20_c22_multi_arc_doptrack': '#6B21A8',
+    'far_manual_1km_1ms': '#DC2626',
 }
 
 print("Setup done. Run your estimations, then call store() after each one.")

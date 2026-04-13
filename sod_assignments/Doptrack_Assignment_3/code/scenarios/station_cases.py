@@ -18,4 +18,13 @@ def get_far_station_config():
     cfg.station_layout_name = 'far'
     return cfg
 
+def get_far_station_manual_perturbation_config():
+    cfg = get_far_station_config()
+    cfg.scenario_name = "far_manual_1km_1ms"
+    cfg.use_next_tle_as_perturbation = False
+    cfg.use_manual_perturbation = True
+    cfg.manual_position_perturbation = 1000.0
+    cfg.manual_velocity_perturbation = 1.0
+    return cfg
+
 

@@ -2,10 +2,10 @@ from runner import run_scenario
 from io_utils import save_results
 from comparision_plots import *
 from scenarios.noise_cases import get_noise_scenarios
-from scenarios.station_cases import get_nearby_station_config, get_far_station_config
+from scenarios.station_cases import get_nearby_station_config, get_far_station_config, get_far_station_manual_perturbation_config
 from scenarios.arc_cases import get_three_day_one_day_arcs
 from scenarios.perturbation_cases import get_manual_perturbation_cases
-from scenarios.gravity_cases import get_c20_c22_single_station, get_c20_c22_far_stations
+from scenarios.gravity_cases import get_c20_c22_single_station, get_c20_c22_far_stations, get_c20_c22_multi_arc_doptrack
 from plots import (
                     plot_station_map,
                     plot_simulated_observations,
@@ -23,8 +23,10 @@ def main():
     scenarios.append(get_manual_perturbation_cases())
     scenarios.append(get_nearby_station_config())
     scenarios.append(get_far_station_config())
+    scenarios.append(get_far_station_manual_perturbation_config())
     scenarios.append(get_c20_c22_single_station())
     scenarios.append(get_c20_c22_far_stations())
+    scenarios.append(get_c20_c22_multi_arc_doptrack())
 
     for config in scenarios:
         try:
